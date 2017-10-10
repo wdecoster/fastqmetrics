@@ -7,7 +7,7 @@ def main():
     args = get_args()
     print("{}".format('\t'.join(['readname', 'length', 'averageQ', 'medianQ'])))
     for res in stream_fastq_full(args.fastq, args.threads):
-        print("{}".format("\t".join(res)))
+        print("{}".format("\t".join((str(i) for i in res))))
 
 
 def get_args():
