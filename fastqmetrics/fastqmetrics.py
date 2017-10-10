@@ -17,8 +17,7 @@ def get_args():
                         action="version",
                         version='fastqmetrics {}'.format(__version__))
     parser.add_argument("-t", "--threads",
-                        help="Set the allowed number of threads to be used by the script. \
-                        This only applies to bam and fastq format as data source",
+                        help="Set the allowed number of threads to be used by the script",
                         default=4,
                         type=int)
     parser.add_argument("fastq",
